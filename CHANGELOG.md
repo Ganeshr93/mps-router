@@ -1,3 +1,32 @@
+# 1.0.0 (2025-04-09)
+
+
+### Bug Fixes
+
+* add test workflow for license file verification ([327e74e](https://github.com/Ganeshr93/mps-router/commit/327e74e583153b5291a1d664868c367e4ed23e4b))
+* **deps:** update dependencies for direct and transitive ([f5fb48a](https://github.com/Ganeshr93/mps-router/commit/f5fb48a1cac6e8d8eed985d90386a2cd645b0e4e))
+* guid parse now supports v1-4 ([393dc3f](https://github.com/Ganeshr93/mps-router/commit/393dc3f034910b930f96367283cc61b9774aaa50))
+* **postgres:** ensure that the connection pool is reused across queries ([bf82988](https://github.com/Ganeshr93/mps-router/commit/bf8298815a651782ce828cc67b310842aab5fab6))
+* **proxy:** Updated mps server and mps router ports as env variables ([4bb454b](https://github.com/Ganeshr93/mps-router/commit/4bb454b9c01a03014cdc4a582e244edb72b6ff62))
+* release updated dependencies ([44e3be7](https://github.com/Ganeshr93/mps-router/commit/44e3be7a7b47cc7f8f1a75d22f42289245437ddd))
+* removes RFC4122 compliance check on uuid to allow any ([e0b364e](https://github.com/Ganeshr93/mps-router/commit/e0b364ee96924b83db880eb93942557ad0932dba))
+* **test:** added unit tests for db ([bd816f6](https://github.com/Ganeshr93/mps-router/commit/bd816f6b5613f03ce9e90a9c1b0a71ac8609fe6f))
+
+
+### Features
+
+* add nosql support via mongo driver ([7155eec](https://github.com/Ganeshr93/mps-router/commit/7155eece070559e2aefca9f5178fb73e12d3959e))
+* **build:** added git workflows ([7ce7e80](https://github.com/Ganeshr93/mps-router/commit/7ce7e808ea63942b1ab49ef04b91bb405c45fcb6))
+* **docker:** add support for devcontainer ([#428](https://github.com/Ganeshr93/mps-router/issues/428)) ([3a09b77](https://github.com/Ganeshr93/mps-router/commit/3a09b773c3aeaea170c4207ea44e5193a9ab6fae))
+* enable multiarch build ([b9d6fac](https://github.com/Ganeshr93/mps-router/commit/b9d6fac096b0eed12886f511d70f42ab191cf4e2))
+* **env:** add option to override default mps host ([0b5fdd9](https://github.com/Ganeshr93/mps-router/commit/0b5fdd900b81397a405a21792d73e3f446a1cc96)), closes [#27](https://github.com/Ganeshr93/mps-router/issues/27)
+* **healthcheck:** adds flag for checking db status ([b3360c7](https://github.com/Ganeshr93/mps-router/commit/b3360c79d49ee9e09c8aac5374cf19c0b2dfa7e8))
+
+
+### Performance Improvements
+
+* addresses some minor performance enhancements ([0318265](https://github.com/Ganeshr93/mps-router/commit/031826570cc352ca1d84be2fc1cdadb1df4a9b23))
+
 # [2.5.0](https://github.com/device-management-toolkit/mps-router/compare/v2.4.0...v2.5.0) (2025-03-18)
 
 

@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/Ganeshr93/mps-router/compare/v1.0.0...v1.0.1) (2025-04-09)
+
+
+### Bug Fixes
+
+* licenses try2 ([900afdb](https://github.com/Ganeshr93/mps-router/commit/900afdbf11b6907252696d837241e7dc0dc4e991))
+
 # 1.0.0 (2025-04-09)
 
 

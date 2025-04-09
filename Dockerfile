@@ -11,13 +11,18 @@ COPY . .
 RUN go mod download
 RUN go mod verify
 RUN CGO_ENABLED=0 GOOS=linux go build -o /go/bin/app -ldflags="-s -w" -v ./cmd/
+RUN mkdir -p /go/src/app/licenses
 #final stage
 FROM scratch
 COPY --from=builder /go/bin/app /app
+
 # Import the user and group files from the builder.
 COPY --from=builder /etc/passwd /etc/passwd
 COPY --from=builder /etc/group /etc/group
 COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
+COPY --from=builder /go/src/app/licenses /licenses
+COPY --from=builder /go/src/app/LICENSE /licenses/LICENSE
+
 USER scratchuser
 ENTRYPOINT ["/app"]
 LABEL Name=mpsrouter Version=1.0.0
